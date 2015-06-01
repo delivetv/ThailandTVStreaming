@@ -1,3 +1,5 @@
+############# DVB-T2 THAI #############
+
 ช่อง 5 
 http://118.174.10.84:1935/live/ch5_1/playlist.m3u8
 
@@ -20,14 +22,11 @@ Workpoint
 http://edge3.psitv.tv:1935/liveedge/292277227873_300/playlist.m3u8
 http://edge10.psitv.tv:1935/liveedge/292277227873_600/chunklist_w376671613.m3u8
 
-
-
 อมรินทร์ ทีวี
 http://112.121.152.34/stream/5195e80fe1ed0/playlist.m3u8
 
 GMM One
 http://202.142.220.224:1935/gmmone/gmmone/playlist.m3u8
-
 
 Now 26
 http://nationstream.nationgroup.com/live.isml/manifest(format=m3u8-aapl).m3u8
@@ -47,7 +46,7 @@ http://solution01.stream.3bb.co.th:1935/MonoTV1080/1080p_th/playlist.m3u8
 ไบรท์ทีวี
 http://iam.brighttv.co.th/BrightTV/smil:live.smil/playlist.m3u8
 
-################### ดาวเทียม #################################
+############# C-KU Band #############
 
 สตาร์แม็กซ์
 http://202.142.207.150:1935/live/liveyaaktv1/playlist.m3u8
@@ -148,9 +147,10 @@ http://edge2.psitv.tv:1935/liveedge/292277143069_300/playlist.m3u8
 IdeaTV8
 http://vip.login.in.th:1935/ideatv8/ideatv8/playlist.m3u8
 
+############# National #############
+
 ABC news
 http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8
-
 
 BBC World News
 http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/bbc_world/ls_satlink/b_828.m3u8
