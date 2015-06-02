@@ -4,8 +4,17 @@
 http://118.174.10.84:1935/live/ch5_1/playlist.m3u8
 http://61.91.12.34:1935/live/smil:tv5adaptive.smil/playlist.m3u8
 
+ThaiPBS
+http://tpbsedge.101g.net:8088/liveedge/tpbsmo1.stream/playlist.m3u8 
+
 ช่อง 3 HD
 http://111.223.37.195:1935/thaitv3_HD/smil:thaitv3_HD.smil/playlist.m3u8
+
+ช่อง 3 SD
+http://111.223.37.197:1935/thaitv3_SD/smil:thaitv3_SD.smil/playlist.m3u8
+
+ช่อง 3 Family
+http://111.223.37.197:1935/thaitv3_FM/smil:thaitv3_FM.smil/playlist.m3u8
 
 MCOT HD
 http://edge9.psitv.tv:1935/liveedge/307803302519_600/playlist.m3u8
@@ -16,18 +25,33 @@ http://202.44.53.13/dtac/mcot_family.stream/chunklist_w191128959.m3u8
 NBT
 http://edge10.psitv.tv:1935/liveedge/308806374084_600/playlist.m3u8
 
+True4U
+http://edge10.psitv.tv:1935/liveedge/308235425316_600/playlist.m3u8
+
 VoiceTV
 http://livestream.voicetv.co.th:1935/live-edge/smil:voicetv_all.smil/playlist.m3u8?DVR
+http://stream.voicetv.co.th:1935/live-edge/smil:voicetv_all.smil/manifest.f4m?DVR
 
 Workpoint
-http://edge3.psitv.tv:1935/liveedge/292277227873_300/playlist.m3u8
 http://edge10.psitv.tv:1935/liveedge/292277227873_600/chunklist_w376671613.m3u8
+
+Spring New
+rtmp://203.145.115.10/live/livestream1
+
+8 Channel
+rtmp://202.142.207.150/live/liveinfinity1
 
 อมรินทร์ ทีวี
 http://112.121.152.34/stream/5195e80fe1ed0/playlist.m3u8
 
+ไทยทีวี
+http://rtmp.thaitv.co.th/live/thaitv.m3u8
+
 GMM One
 http://202.142.220.224:1935/gmmone/gmmone/playlist.m3u8
+
+GMM 25
+http://edge10.psitv.tv:1935/liveedge/292277190845_600/playlist.m3u8
 
 Now 26
 http://nationstream.nationgroup.com/live.isml/manifest(format=m3u8-aapl).m3u8
@@ -47,7 +71,13 @@ http://solution01.stream.3bb.co.th:1935/MonoTV1080/1080p_th/playlist.m3u8
 ไบรท์ทีวี
 http://iam.brighttv.co.th/BrightTV/smil:live.smil/playlist.m3u8
 
+PPTV
+http://pptv.cdn.byteark.com/live/playlist.m3u8
+
 ############# C-KU Band #############
+
+โทรทัศน์รัฐสภา
+rtmp://202.57.162.55:1935/live03/live03 
 
 สตาร์แม็กซ์
 http://202.142.207.150:1935/live/liveyaaktv1/playlist.m3u8
