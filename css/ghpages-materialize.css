@@ -5337,6 +5337,67 @@ nav {
     height: 64px; } }
 
 @font-face {
+    font-family: 'pgvimregular';
+    src: url('../font/pgvim/pgvim-webfont.eot');
+    src: url('../font/pgvim/pgvim-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pgvim/pgvim-webfont.woff2') format('woff2'),
+         url('../font/pgvim/pgvim-webfont.woff') format('woff'),
+         url('../font/pgvim/pgvim-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../font/thsarabun/thsarabunnew-webfont.eot');
+    src: url('../font/thsarabun/thsarabunnew-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/thsarabun/thsarabunnew-webfont.woff') format('woff'),
+         url('../font/thsarabun/thsarabunnew-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../font/thsarabun/thsarabunnew_bolditalic-webfont.eot');
+    src: url('../font/thsarabun/thsarabunnew_bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/thsarabun/thsarabunnew_bolditalic-webfont.woff') format('woff'),
+         url('../font/thsarabun/thsarabunnew_bolditalic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../font/thsarabun/thsarabunnew_italic-webfont.eot');
+    src: url('../font/thsarabun/thsarabunnew_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/thsarabun/thsarabunnew_italic-webfont.woff') format('woff'),
+         url('../font/thsarabun/thsarabunnew_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../font/thsarabun/thsarabunnew_bold-webfont.eot');
+    src: url('../font/thsarabun/thsarabunnew_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/thsarabun/thsarabunnew_bold-webfont.woff') format('woff'),
+         url('../font/thsarabun/thsarabunnew_bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.thsarabunnew{
+   font-family: 'THSarabunNew', sans-serif;
+}
+
+
+@font-face {
   font-family: "Roboto";
   src: url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200; }
@@ -5366,7 +5427,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: "THSarabunNew", sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
@@ -5387,7 +5448,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 8rem;
   line-height: 110%;
   margin: 2.1rem 0 1.68rem 0; }
 
@@ -8129,8 +8190,12 @@ p {
   padding: 0;
   -webkit-font-smoothing: antialiased; }
 
-h1, h2, h3, h4, h5, h6 {
-  -webkit-font-smoothing: antialiased; }
+h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased; }
+
+h1 {
+    font-family: 'pgvimregular'; }
+    font-size: 50px;
 
 nav a {
   -webkit-font-smoothing: antialiased; }
@@ -8140,7 +8205,6 @@ nav ul li:hover, nav ul li.active {
 .header {
   color: #ee6e73;
   font-weight: 300; }
-
 .caption {
   font-size: 1.25rem;
   font-weight: 300;
@@ -8537,7 +8601,7 @@ pre[class*="language-"] {
     background: #e8e6e3;
     top: 0;
     left: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "THSarabunNew", sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #555;
     content: attr(class);
