@@ -17,117 +17,7 @@
     <!-- CSS-->
     <link href="css/prism.css" rel="stylesheet">
     <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <!-- Player -->  
-    <script type="text/javascript" src="./player/libs/swfobject.js"></script>
-    <script type="text/javascript" src="./player/libs/ParsedQueryString.js"></script>
-    <script type="text/javascript" src="../../../playlists/streams.js"></script>
-    <script type="text/javascript">  
-        var player = null;
-
-function loadStream(url) {
-  player.setMediaResourceURL(url);
-}
-
-function getlink(url) {
-  return "index.html?src=" + encodeURIComponent(url);
-}
-
-function listStreams(list, container) {
-  for(var i=0; i<list.length; i++) { var entry = document.createElement("li");
-    //entry.innerHTML = "<a href=" + getlink(list[i].file) + ">" +list[i].title+"</a>";
-    entry.innerHTML = "<a href='#' onclick='return loadStream(\""+list[i].file+"\")'>"+list[i].title+"</a>";    
-    document.getElementById(container).appendChild(entry);
-  }
-  //loadStream(list[0].file);
-}
-
-
-        function jsbridge(playerId, event, data) {
-          if (player == null) {
-            player = document.getElementById(playerId);
-          }
-          switch(event) {
-            case "onJavaScriptBridgeCreated":
-              listStreams(teststreams,"streamlist");
-              break;
-             case "timeChange":
-             case "timeupdate":
-             case "progress":
-               break;
-             default:
-              console.log(event, data);
-            }
-        }
-
-            // Collect query parameters in an object that we can
-            // forward to SWFObject:
-            
-            var pqs = new ParsedQueryString();
-            var parameterNames = pqs.params(false);
-            var parameters = {
-                src: "http://live.thairath.co.th/trtv/playlist.m3u8",
-                //src: "http://localhost:8082/playlists/test_001/stream.m3u8",
-                autoPlay: "true",
-                verbose: true,
-                controlBarAutoHide: "true",
-                controlBarPosition: "bottom",
-                poster: "images/poster.png",
-                javascriptCallbackFunction: "jsbridge",
-                plugin_hls: "./bin/release/flashlsOSMF.swf",
-                hls_minbufferlength: -1,
-                hls_maxbufferlength: 300,
-                hls_lowbufferlength: 3,
-                hls_seekmode: "KEYFRAME",
-                hls_startfromlevel: -1,
-                hls_seekfromlevel: -1,
-                hls_live_flushurlcache: false,
-                hls_info: true,
-                hls_debug: false,
-                hls_debug2: false,
-                hls_warn: true,
-                hls_error: true,
-                hls_fragmentloadmaxretry : -1,
-                hls_manifestloadmaxretry : -1,
-                hls_capleveltostage : false,
-                hls_maxlevelcappingmode : "downscale"
-            };
-            
-            for (var i = 0; i < parameterNames.length; i++) {
-                var parameterName = parameterNames[i];
-                parameters[parameterName] = pqs.param(parameterName) ||
-                parameters[parameterName];
-            }
-            
-            var wmodeValue = "direct";
-            var wmodeOptions = ["direct", "opaque", "transparent", "window"];
-            if (parameters.hasOwnProperty("wmode"))
-            {
-                if (wmodeOptions.indexOf(parameters.wmode) >= 0)
-                {
-                    wmodeValue = parameters.wmode;
-                }                   
-                delete parameters.wmode;
-            }
-            
-            // Embed the player SWF:                
-            swfobject.embedSWF(
-                "GrindPlayer.swf"
-                , "GrindPlayer"
-                , 850
-                , 480
-                , "10.1.0"
-                , "expressInstall.swf"
-                , parameters
-                , {
-                    allowFullScreen: "true",
-                    wmode: wmodeValue
-                }
-                , {
-                    name: "GrindPlayer"
-                }
-            );
-            
-        </script>
+      
   </head>
   <body>
     <header>
@@ -171,17 +61,19 @@ function listStreams(list, container) {
             <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="mdi-maps-flight"></i> ทีวีต่างประเทศ</a>
               <div class="collapsible-body">
                 <ul>
-                  <li><a href="index.html?src=http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8">ABC news</a></li>
-                  <li><a href="index.html?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/bbc_world/ls_satlink/b_828.m3u8">BBC World News</a></li>
-                  <li><a href="index.html?src=http://cdn3.videos.bloomberg.com/btv/us/master.m3u8?b?b*t$">Bloomberg</a></li>
-                  <li><a href="index.html?src=http://plslive-w.nhk.or.jp/nhkworld/app-mainp/live.m3u8">NHK World</a></li>
-                  <li><a href="index.html?src=http://odna.octoshape.net/f3f5m2v4/cds/smil:ch1_auto.smil/playlist.m3u8">RT</a></li>
-                  <li><a href="index.html?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnn/ls_satlink/b_528.m3u8">CNN</a></li>
-                  <li><a href="index.html?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnbc_eu/ls_satlink/b_,264,528,828,.m3u8">CBNC</a></li>
-                  <li><a href="index.html?src=http://hindiabp-lh.akamaihd.net/i/hindiabp1new_1@192103/master.m3u8">ABP</a></li>
-                  <li><a href="index.html?src=http://ibn7_hls-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_3.m3u8">IBN</a></li>
-                  <li><a href="index.html?src=http://fichd-lh.akamaihd.net/i/NATGEOW_LATAM@304509/index_2000_av-b.m3u8?sd=10&rebase=on?monclovacaliente.m3u8">Nat Geo</a></li>
-                  <li><a href="index.html?src=http://hlsstr03.svc.iptv.rt.ru/hls/CH_C04_NGCHD/variant.m3u8?version=2">Nat Geo HD</a></li>
+                  <li><a href="collapsible.html">Collapsible</a></li>
+                  <li><a href="dialogs.html">Dialogs</a></li>
+                  <li><a href="dropdown.html">Dropdown</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="modals.html">Modals</a></li>
+                  <li><a href="parallax.html">Parallax</a></li>
+                  <li><a href="pushpin.html">Pushpin</a></li>
+                  <li><a href="scrollfire.html">ScrollFire</a></li>
+                  <li><a href="scrollspy.html">Scrollspy</a></li>
+                  <li><a href="side-nav.html">SideNav</a></li>
+                  <li><a href="tabs.html">Tabs</a></li>
+                  <li><a href="transitions.html">Transitions</a></li>
+                  <li><a href="waves.html">Waves</a></li>
                 </ul>
               </div>
             </li>
@@ -219,31 +111,54 @@ function listStreams(list, container) {
           <div class="row">
             <div class="col s12 m8 offset-m2">
               <br>
-                
-                
-        <table width="100%" border="0" cellspacing="5">
-            <tr>
-                <td>
-                    <div id="GrindPlayer">
-                        <p>
-                            Alternative content
-                        </p>
-                    </div>
-                </td>
-            </tr>
-        </table>
- <script type="text/javascript">
-function userSubmit() {
-  window.location = getlink(document.getElementById('userInput').value);
-}
-</script>                 
+              <img id="responsive-img" src="images/responsive.png">
             </div>
           </div>
 
+          <div class="row">
+            <h3 class="col s12 light center header">Materialize simplifies life for developers and the users they serve.</h3>
+          </div>
+
+          <!--   Promo Section   -->
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="center promo">
+                <i class="mdi-image-flash-on"></i>
+                <p class="promo-caption">Speeds up development</p>
+                <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="center promo">
+                <i class="mdi-social-group"></i>
+                <p class="promo-caption">User Experience Focused</p>
+                <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="center promo">
+                <i class="mdi-action-settings"></i>
+                <p class="promo-caption">Easy to work with</p>
+                <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <div class="row center">
+            <h3 class="light header">Materialize Showcase</h3>
+            <p class="col s8 offset-s2 caption">Checkout what people are creating with Materialize. Get inspired by these beautiful sites and you can even submit your own website to be showcased here.</p>
+            <a href="http://materializecss.com/showcase.html" class="btn-large waves-effect waves-light">Explore our Showcase</a>
+          </div>
+        </div>
+      </div>
 
 
-    </main>    
-<footer class="page-footer">
+    </main>    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
