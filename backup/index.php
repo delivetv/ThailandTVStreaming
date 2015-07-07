@@ -12,6 +12,7 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="images/favicon/android-icon-192x192.png" sizes="192x192"> 
     <!--  Android 5 Chrome Color-->
     <meta name="theme-color" content="#EE6E73">
     <!-- CSS-->
@@ -131,6 +132,7 @@ function listStreams(list, container) {
             );
             
         </script>
+       
   </head>
     
   <body>
@@ -139,7 +141,7 @@ function listStreams(list, container) {
       <ul id="nav-mobile" class="side-nav fixed">
         <li class="logo"><a id="logo-container" href="" class="brand-logo">
             <object id="front-page-logo" type="image/svg+xml" data="res/ths.svg">Your browser does not support SVG</object></a></li>
-        <li class="bold"><a href="index.html" class="waves-effect waves-teal"><i class="mdi-action-home"></i> หน้าหลัก</a></li>
+        <li class="bold"><a href="./" class="waves-effect waves-teal"><i class="mdi-action-home"></i> หน้าหลัก</a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
               <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="mdi-editor-insert-photo"></i> ทีวีดิจิตอล</a>
@@ -175,17 +177,17 @@ function listStreams(list, container) {
             <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="mdi-maps-flight"></i> ทีวีต่างประเทศ</a>
               <div class="collapsible-body">
                 <ul>
-                  <li><a href="index.html?src=http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8">ABC news</a></li>
-                  <li><a href="index.html?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/bbc_world/ls_satlink/b_828.m3u8">BBC World News</a></li>
-                  <li><a href="index.html?src=http://cdn3.videos.bloomberg.com/btv/us/master.m3u8?b?b*t$">Bloomberg</a></li>
-                  <li><a href="index.html?src=http://plslive-w.nhk.or.jp/nhkworld/app-mainp/live.m3u8">NHK World</a></li>
-                  <li><a href="index.html?src=http://odna.octoshape.net/f3f5m2v4/cds/smil:ch1_auto.smil/playlist.m3u8">RT</a></li>
-                  <li><a href="index.html?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnn/ls_satlink/b_528.m3u8">CNN</a></li>
-                  <li><a href="index.html?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnbc_eu/ls_satlink/b_,264,528,828,.m3u8">CBNC</a></li>
-                  <li><a href="index.html?src=http://hindiabp-lh.akamaihd.net/i/hindiabp1new_1@192103/master.m3u8">ABP</a></li>
-                  <li><a href="index.html?src=http://ibn7_hls-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_3.m3u8">IBN</a></li>
-                  <li><a href="index.html?src=http://fichd-lh.akamaihd.net/i/NATGEOW_LATAM@304509/index_2000_av-b.m3u8?sd=10&rebase=on?monclovacaliente.m3u8">Nat Geo</a></li>
-                  <li><a href="index.html?src=http://hlsstr03.svc.iptv.rt.ru/hls/CH_C04_NGCHD/variant.m3u8?version=2">Nat Geo HD</a></li>
+                  <li><a href="./?src=http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8">ABC news</a></li>
+                  <li><a href="./?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/bbc_world/ls_satlink/b_828.m3u8">BBC World News</a></li>
+                  <li><a href="./?src=http://cdn3.videos.bloomberg.com/btv/us/master.m3u8?b?b*t$">Bloomberg</a></li>
+                  <li><a href="./?src=http://plslive-w.nhk.or.jp/nhkworld/app-mainp/live.m3u8">NHK World</a></li>
+                  <li><a href="./?src=http://odna.octoshape.net/f3f5m2v4/cds/smil:ch1_auto.smil/playlist.m3u8">RT</a></li>
+                  <li><a href="./?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnn/ls_satlink/b_528.m3u8">CNN</a></li>
+                  <li><a href="./?src=http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnbc_eu/ls_satlink/b_,264,528,828,.m3u8">CBNC</a></li>
+                  <li><a href="./?src=http://hindiabp-lh.akamaihd.net/i/hindiabp1new_1@192103/master.m3u8">ABP</a></li>
+                  <li><a href="./?src=http://ibn7_hls-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_3.m3u8">IBN</a></li>
+                  <li><a href="./?src=http://fichd-lh.akamaihd.net/i/NATGEOW_LATAM@304509/index_2000_av-b.m3u8?sd=10&rebase=on?monclovacaliente.m3u8">Nat Geo</a></li>
+                  <li><a href="./?src=http://hlsstr03.svc.iptv.rt.ru/hls/CH_C04_NGCHD/variant.m3u8?version=2">Nat Geo HD</a></li>
                 </ul>
               </div>
             </li>
@@ -231,12 +233,7 @@ function listStreams(list, container) {
                         </p>
                     </div>
         </div>    
-                
- <script type="text/javascript">
-function userSubmit() {
-  window.location = getlink(document.getElementById('userInput').value);
-}
-</script>                 
+                            
             </div>
           </div>
 
@@ -278,7 +275,6 @@ function userSubmit() {
     <script src="js/init.js"></script>
     <!-- Twitter Button -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-    
+          
   </body>
 </html>
