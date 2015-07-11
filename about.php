@@ -236,7 +236,7 @@ function listStreams(list, container) {
             </li>
           </ul>
         </li>
-        <li class="bold"><a href="about.php" class="waves-effect waves-teal"><i class="mdi-maps-directions-walk"></i> เกี่ยวกับ</a></li>
+        <li class="bold"><a href="about.html" class="waves-effect waves-teal"><i class="mdi-maps-directions-walk"></i> เกี่ยวกับ</a></li>
       </ul>
     </header>
     <main>
@@ -262,23 +262,33 @@ function listStreams(list, container) {
         </div>
       </div>
 
-      <div class="container">
-        <div class="section">
+<center>              
+    <div class="container">
+      <div class="section">
 
           <div class="row">
-            <div class="col s12 m8 offset-m2">
-              <br>
-                
-        <div class="video-container">        
-                    <div id="GrindPlayer">
-                        <p>
-                            Alternative content
-                        </p>
-                    </div>
-        </div>    
-                            
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/beaver-away.jpg">
+              <span class="card-title">บีเวอร์ วิศวกรแห่งป่าไม้</span>
+            </div>
+            <div class="card-content">
+              <p>บีเวอร์ (ฺBeaver) มีลักษณะนิสัยชอบตัดต้นไม้ กิ่งไม้ ฯลฯ มาประกอบเป็นที่อยู่อาศัยก็เหมือนนิสัยของผม ชอบหยิบนู้นหยิบนี้มายำรวมกัน ขอบพระคุณทุกคนที่ให้ความสนใจกับโปรเจกต์นี้นะครับ ติดต่อผม หรือแจ้งลบช่องได้ที่อีเมล์ debsirin10498@gmail.com </p>
+            </div>
+            <div class="card-action">
+              <a href="http://pantip.com/topic/31098309">อ่านข้อมูลต่อ</a>
             </div>
           </div>
+        </div>
+      </div>
+     
+                            
+    </div>
+      </div>      
+</center>        
+        
+        
 </main>
       
 <footer class="page-footer">

@@ -1,4 +1,4 @@
-############# DVB-T2 THAI #############
+﻿############# DVB-T2 THAI #############
 
 ช่อง 5 
 http://118.174.10.84:1935/live/ch5_1/playlist.m3u8
@@ -213,5 +213,13 @@ http://fichd-lh.akamaihd.net/i/NATGEOW_LATAM@304509/index_2000_av-b.m3u8?sd=10&r
 Nat geo (HD)
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_C04_NGCHD/variant.m3u8?version=2
 
+/***/
+CCTV1
+http://vod.cdn4.cmvideo.cn/envivo_v/HD/cctv1/450/01.m3u8
 
+SkyNews (UK)
+http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/skynews/ls_satlink/b_828.m3u8
+
+CNBC
+http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnbc_eu/ls_satlink/b_,264,528,828,.m3u8
 
