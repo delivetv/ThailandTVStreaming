@@ -1,0 +1,1 @@
+127.0.0.1|<|1436680489|<|http%3A%2F%2F127.0.0.1%2FThailandTVStreaming%2F%3Fsrc%3Dhttp%3A%2F%2F111.223.37.197%3A1935%2Fthaitv3_FM%2Fsmil%3Athaitv3_FM.smil%2Fplaylist.m3u8|<|0

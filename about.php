@@ -1,3 +1,4 @@
+<? include("./useronline.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -135,7 +136,7 @@ function listStreams(list, container) {
        
   </head>
     
-  <body>
+  <body>  
     <header>
       <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i class="mdi-navigation-menu"></i></a></div>
       <ul id="nav-mobile" class="side-nav fixed">
@@ -251,12 +252,23 @@ function listStreams(list, container) {
         <div class="github-commit">
           <div class="container">
             <div class="commit">
-              อัปเดตล่าสุด :
+              <script src="http://127.0.0.1/ThailandTVStreaming/useron/online.php?js=1"></script>
               &nbsp;&nbsp;
-              <a href="" class="sha"></a>
               &nbsp;&nbsp;
-              <span class="date"></span>
-              <a id="github-button" href="https://github.com/iLek2428/ThailandTVStreaming" class="btn-flat right grey-text text-lighten-5 waves-effect waves-light hide-on-small-only">Github</a>
+              &nbsp;&nbsp;
+              &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                
+                วัน
+               <?php
+               include( 'thaidate.php' );
+               echo thaidate( 'l j F Y H:i', time() ); //ผลลัพธ์ 5 จันทร์ มีนาคม 2555
+               ?>
+               น.
+                
             </div>
           </div>
         </div>
@@ -274,7 +286,7 @@ function listStreams(list, container) {
               <span class="card-title">บีเวอร์ วิศวกรแห่งป่าไม้</span>
             </div>
             <div class="card-content">
-              <p>บีเวอร์ (ฺBeaver) มีลักษณะนิสัยชอบตัดต้นไม้ กิ่งไม้ ฯลฯ มาประกอบเป็นที่อยู่อาศัยก็เหมือนนิสัยของผม ชอบหยิบนู้นหยิบนี้มายำรวมกัน ขอบพระคุณทุกคนที่ให้ความสนใจกับโปรเจกต์นี้นะครับ ติดต่อผม หรือแจ้งลบช่องได้ที่อีเมล์ debsirin10498@gmail.com </p>
+              <p>บีเวอร์ (ฺBeaver) มีลักษณะนิสัยชอบตัดต้นไม้ กิ่งไม้ ฯลฯ มาประกอบเป็นที่อยู่อาศัยก็คงจะเหมือนกับนิสัยของผม ชอบหยิบนู้นหยิบนี้มายำรวมกัน ขอบพระคุณทุกคนที่ให้ความสนใจกับโปรเจกต์นี้นะครับ ติดต่อผม แนะนำติชม หรือแจ้งลบช่องได้ที่อีเมล์ debsirin10498@gmail.com </p>
             </div>
             <div class="card-action">
               <a href="http://pantip.com/topic/31098309">อ่านข้อมูลต่อ</a>
@@ -313,6 +325,7 @@ function listStreams(list, container) {
         <div class="container">
         © 2015 THS Project Theme by <a href="http://materializecss.com/">Materialize</a>
         <a class="grey-text text-lighten-4 right" href="https://creativecommons.org/licenses/by/3.0/th/legalcode">BY License</a>
+            
         </div>
       </div>
     </footer>
@@ -327,9 +340,16 @@ function listStreams(list, container) {
     <!-- Twitter Button -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<script type="text/javascript">
-function userSubmit() {
-  window.location = getlink(document.getElementById('userInput').value);
-}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65052503-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+      
   </body>
 </html>
